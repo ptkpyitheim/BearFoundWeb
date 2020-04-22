@@ -31,7 +31,7 @@
 
 
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <nav class="navbar navbar-expand-sm navbar-light" id="navbar">
         <a class="navbar-brand" href="https://apps.apple.com/us/app/bearfound/id1503739627" target="_blank">
             <img id="BearFound-logo-nav" src="images/BearFound.png" alt="BearFound logo" />
             <span class="title">BearFound</span>
@@ -42,8 +42,8 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About </span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#found-section">Found</a>
@@ -140,11 +140,11 @@
                 <div class="container">
                     <div class="row">
                         <div class="col text-center">
-                            <h2 class="text-dark">Download our iOS App!</h2>
-                            <p>For more features</p>
+                            <h2 class="text-light">Download our iOS App!</h2>
+                            <p class="text-light">For more features</p>
                         </div>
                         <div class="col text-center">
-                            <button id="download-btn" class="btn btn-lg btn-outline-dark">DOWNLOAD</button>
+                            <button id="download-btn" class="btn btn-lg btn-outline-light">DOWNLOAD</button>
                         </div>
                     </div>
                 </div>
@@ -157,7 +157,8 @@
 
     <!-- Lost items section -->
     <div class="container-fluid p-4 border-bottom" id="lost-section">
-        <h2 class="text-center">Lost items</h2>
+        <h2 class="text-center lost-found-title">Lost items</h2>
+        <p class="text-center">Found an item and wondering who it belongs to? Find who lost it.</p>
         <div class="row" id="lost-container">
 
             <!-- Example code -->
@@ -179,18 +180,22 @@
 
     <!-- Found items section -->
     <div class="container-fluid p-4" id="found-section">
-        <h2 class="text-center">Found items</h2>
+        <h2 class="text-center lost-found-title">Found items</h2>
+        <p class="text-center">Trying to find that precious water bottle you lost? See if somebody found it.</p>
         <div class="row" id="found-container">
 
             <!-- Example code -->
             <!-- <div class="col">
                 <div class="card mb-3">
                     <div class="card-body">
-                        <h5 class="card-title">Found item name</h5>
+                        <div class="mb-3">
+                            <span class="h5 card-title">Found item name</span>
+                        </div>
                         <p class="card-text">Found item description</p>
                         <p class="card-text">Category: <span class="category">Charger</span></p>
                         <p class="card-text">Location: <span class="location">Olin</span></p>
                         <p class="card-text"><small class="text-muted">Date of it</small></p>
+                        <a href="#" class="btn btn-sm contact-btn" style="float:right;">Contact</a>
                     </div>
                 </div>
             </div> -->
@@ -201,6 +206,7 @@
 
     <!-- Footer section  -->
     <div class="container-fluid" id="footer-section">
+        <h2 class="text-center">Meet our team</h2>
         <div class="row">
             <p>Contact Info: ptk.pyitheim@gmail.com</p>
         </div>

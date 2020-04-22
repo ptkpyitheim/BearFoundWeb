@@ -2,6 +2,9 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+#navbar {
+}
+
 #BearFound-logo {
     width: 90%;
 }
@@ -10,6 +13,14 @@ body {
     width: 30px;
     height: 30px;
     border-radius: 50%;
+}
+
+.lost-found-title {
+    color: #a51417;
+}
+
+.contact-btn {
+    background-color: #d8d8d8;
 }
 
 .jumbotron {
@@ -78,10 +89,10 @@ body {
 }
 
 #download-container {
-    background-color: #d8d8d8;
+    background-color: #173e3a;
     padding-top: 75px;
     padding-bottom: 75px;
-    border-radius: 20px;
+    border-radius: 20px 0px 0px 20px;
 }
 
 #footer-section {

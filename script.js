@@ -86,9 +86,19 @@ function addItem(item, type) {
     let cardBody = d.createElement("div");
     cardBody.classList = "card-body";
 
-    let cardTitle = d.createElement("h5");
-    cardTitle.classList = "card-title"
-    cardTitle.appendChild(d.createTextNode(title));
+    let titlediv = d.createElement("div");
+    titlediv.classList = "mb-3";
+
+    let titlespan = d.createElement("span");
+    titlespan.classList = "h5 card-title";
+    titlespan.appendChild(d.createTextNode(title))
+
+    let contact = d.createElement("a");
+    contact.classList = "btn btn-sm contact-btn";
+    contact.style = "float: right;";
+    contact.appendChild(d.createTextNode("Contact"));
+
+    titlediv.appendChild(titlespan);
 
     let cardText = d.createElement("p");
     cardText.classList = "card-text";
@@ -131,11 +141,12 @@ function addItem(item, type) {
     dateEl.appendChild(d.createElement("br"));
     dateEl.appendChild(timeEl);
 
-    cardBody.appendChild(cardTitle);
+    cardBody.appendChild(titlediv);
     cardBody.appendChild(cardText);
     cardBody.appendChild(cat);
     cardBody.appendChild(loc);
     cardBody.appendChild(dateEl);
+    cardBody.appendChild(contact);
     card.appendChild(cardBody);
     col.appendChild(card);
     con.appendChild(col);
