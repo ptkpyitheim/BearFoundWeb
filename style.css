@@ -1,0 +1,63 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+#BearFound-logo {
+    width: 90%;
+}
+
+#BearFound-logo-nav {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.jumbotron {
+    height: 30em;
+    background-color: black;
+    margin-bottom: 0;
+}
+
+
+#lost-container, #found-container {
+    margin-bottom: 0;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+#found-section {
+    margin-bottom: 0;
+}
+
+#jumbotron-container {
+    color: white;
+}
+
+.jumbotron-title {
+    font-size: 4em;
+}
+
+.text-secondary {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.title {
+    color: rgb(169, 16, 28);
+}
+
+#footer-section {
+    padding: 50px 70px;
+}
+
+#download-container {
+    background-color: #d8d8d8;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    border-radius: 20px;
+    width: 250px;
+}
+
+#footer-section {
+    background-color: #d8d8d8;
+}
