@@ -41,6 +41,7 @@ document.getElementById("download-btn").onclick = function () {
 };
 
 
+
 function addItem(item, type) {
     let title = item.name;
     let location = item.location;
