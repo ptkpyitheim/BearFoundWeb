@@ -53,7 +53,7 @@
                 </li>
             </ul>
             <span class="navbar-text">
-                <button id="authentication-btn" class="btn btn-secondary" type="button" data-toggle="modal"
+                <button id="authentication-btn" class="btn" type="button" data-toggle="modal"
                     data-target="#exampleModal">Login/Signup</button>
             </span>
         </div>
@@ -65,13 +65,21 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="auth-modal-title">Login (in development...)</h5>
+                    <h5 class="modal-title" id="auth-modal-title">Login</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
                     <form>
+                        <div class="form-group sign-up-display">
+                            <label for="first-name">First Name</label>
+                            <input type="text" class="form-control" id="first-name" placeholder="Enter first name">
+                        </div>
+                        <div class="form-group sign-up-display">
+                            <label for="last-name">Last Name</label>
+                            <input type="text" class="form-control" id="last-name" placeholder="Enter last name">
+                        </div>
                         <div class="form-group">
                             <label for="exampleInputEmail1">Your WUSTL email address</label>
                             <input type="email" class="form-control" id="exampleInputEmail1"
@@ -82,13 +90,14 @@
                             <input type="password" class="form-control" id="exampleInputPassword1"
                                 placeholder="Password">
                         </div>
-                        <small>Don't have an account? </small>
-                        <small> Sign up!</small>
+                        <small id="redirect-text">Don't have an account? </small>
+                        <span class="text-danger redirect-link" id="signup-link"> Sign up!</span>
+                        <span class="text-success redirect-link" id="login-link"> Login!</span>
                     </form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button id="login-btn" type="button" class="btn btn-success">Login</button>
+                    <button id="auth-btn" type="button" class="btn">Login</button>
                 </div>
             </div>
         </div>
@@ -106,7 +115,7 @@
                     <p class="text-secondary">Founded and developed by four computer science students <br /> at
                         Washington University in St.
                         Louis</p>
-                    <p class="text-secondary" style="font-size: 0.8em">Developers: <span class="px-1">Saulet
+                    <p class="text-secondary" style="font-size: 0.85em">Developers: <span class="px-1">Saulet
                             Yskak</span> • <span class="px-1">Matheus Bustamante</span> •
                         <span class="px-1">Minh Vu</span> • <span class="px-1">Pyi Theim Kyaw
                             (PTK)</span></p>

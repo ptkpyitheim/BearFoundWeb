@@ -40,6 +40,29 @@ document.getElementById("download-btn").onclick = function () {
     location.href = 'https://apps.apple.com/us/app/bearfound/id1503739627';
 };
 
+$('#signup-link').click(function () {
+    //Expand first name and last name form
+    $('#auth-modal-title').text("Signup");
+    $('#auth-btn').text("Signup");
+    $('#auth-btn').css("background-color", "#a51417");
+    $('.sign-up-display').css("display", "block");
+    $('#login-link').css("display", "block");
+    $('#redirect-text').text("Don't have an account?");
+    $('#signup-link').css("display", "none");
+});
+
+$('#login-link').click(function () {
+    //Expand first name and last name form
+    $('#auth-modal-title').text("Login");
+    $('#auth-btn').text("Login");
+    $('#auth-btn').css("background-color", "#173e3a");
+    $('.sign-up-display').css("display", "none");
+    $('#redirect-text').text("Already a member?");
+    $('#login-link').css("display", "none");
+    $('#signup-link').css("display", "block");
+    $('#signup-link').css("color", "#a51417");
+});
+
 
 
 function addItem(item, type) {

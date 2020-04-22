@@ -18,6 +18,33 @@ body {
     margin-bottom: 0;
 }
 
+.redirect-link:hover {
+    cursor: pointer;
+}
+
+.redirect-link {
+    font-size: 80%;
+}
+
+#authentication-btn {
+    background-color: #a51417;
+    color: white;
+    font-size: 0.9em;
+}
+
+#auth-btn {
+    background-color: #173e3a;
+    color: white;
+}
+
+#login-link {
+    display: none;
+}
+
+.sign-up-display {
+    display: none;
+}
+
 
 #lost-container, #found-container {
     margin-bottom: 0;
@@ -55,7 +82,6 @@ body {
     padding-top: 75px;
     padding-bottom: 75px;
     border-radius: 20px;
-    width: 250px;
 }
 
 #footer-section {
